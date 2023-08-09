@@ -8,29 +8,57 @@
 </head>
 
 <body>
-    <h1 id="title">Aspa's Yarn Craft survey</h1>
+    <h1 id="title">Aspa's Yarn Crafts survey</h1>
     <p>FreeCodeCamp's first test excercise</p>
     <form id="survey-form">
         <fieldset><!--Labels-->
             <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Pedro"></label>
-            <label for="email" id="email-label">Enter your email: <input type="email" id="email" placeholder="abc@email.com"></label>
-            <label for="number" id="number-label">What's your lucky number? <!--How many house pets do you have?--> <input type="text" id="number" pattern="[0-500]" max="500" min="0"></label>
+            <label for="email" id="email-label">Enter your email: <input type="email" id="email"
+                    placeholder="abc@email.com"></label>
+            <label for="number" id="number-label">What's your lucky number?
+                <input type="text" id="number" pattern="[0-500]" max="500" min="0"
+                    placeholder="Pick from 0 to 500"></label>
         </fieldset>
         <fieldset><!--Dropdown - how often do you craft?-->
+            <label for="dropdown">How often do you craft? </label>
             <select id="dropdown">
                 <option value="">Select one</option>
-                <option value="1">argfhf</option>
-                <option value="1">argfhf</option>
+                <option value="1">When my kids are asleep</option>
+                <option value="2">Only on my days off</option>
+                <option value="3">I always have a project on the go</option>
+                <option value="4">What is sleep?</option>
             </select>
-        </fieldset>
-        <fieldset><!--Radio Buttons--><!--Which item did you bought/loose last?-->
-            <input type="radio" name="radio">
-            <input type="radio" name="radio">
-        </fieldset>
-        <fieldset><!--Checkboxes with value attributes--><!--Yarn/tread hobby type--></fieldset>
-        <fieldset><!--Textarea--><!--What do you like crafting the most?--></fieldset>
-        <input type="button"><!--Submit Button-->
 
+        </fieldset>
+        <fieldset><!--Radio Buttons--><!--Which item did you lose last?-->
+            <label for="lost-item">Which one did you lose last?</label>
+            <input type="radio" name="lost-item">Patience
+            <input type="radio" name="lost-item">Needle
+            <input type="radio" name="lost-item">Hook
+        </fieldset>
+        <fieldset><!--Checkboxes with value attributes--><!--Yarn/tread hobby type-->
+            <label for="checkbox">What are your yarn/thread hobbies? </label>
+            <input type="checkbox" name="checkbox" value="1">Crochet </label>
+            <input type="checkbox" name="checkbox" value="2">Amigurumi </label>
+            <input type="checkbox" name="checkbox" value="3">Knitting </label>
+            <input type="checkbox" name="checkbox" value="4">Spool knitting </label>
+            <input type="checkbox" name="checkbox" value="5">Fiber art </label>
+            <input type="checkbox" name="checkbox" value="6">Macrame </label>
+            <input type="checkbox" name="checkbox" value="7">Embroidery </label>
+            <input type="checkbox" name="checkbox" value="8">Cross stitch </label>
+            <input type="checkbox" name="checkbox" value="9">Needlepoint </label>
+            <input type="checkbox" name="checkbox" value="10">Punch needle </label>
+            <input type="checkbox" name="checkbox" value="11">Sewing </label>
+            <input type="checkbox" name="checkbox" value="12">Patchwork </label>
+            <input type="checkbox" name="checkbox" value="13">English Paper Piecing (EPP) </label>
+            <input type="checkbox" name="checkbox" value="14">Quilting </label>
+            <input type="checkbox" name="checkbox" value="15">Beadwork </label>
+        </fieldset>
+        <fieldset><!--Textarea--><!--What do you like crafting the most?-->
+            <label for="message">What do you like crafting the most?</label>
+            <textarea name="message" rows="10" cols="35" placeholder="Whatever I see on Pinterest!"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit"><!--Submit Button-->
     </form>
 
 </body>
