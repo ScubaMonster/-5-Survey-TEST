@@ -3,21 +3,24 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freeCodeCamp Survey Form</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1 id="title">Aspa's Yarn Crafts survey</h1>
-    <p>FreeCodeCamp's first test excercise</p>
-    <form id="survey-form">
+    <main>
+        <h1 id="title">Aspa's Yarn and Thread Crafts survey</h1>
+        <p id="description">This is FreeCodeCamp's first test excercise</p>
+    </main>
+    <form id="survey-form" method="post"><!--form is missing the action url-->
         <fieldset><!--Labels-->
-            <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Pedro"></label>
+            <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Pedro" required></label>
             <label for="email" id="email-label">Enter your email: <input type="email" id="email"
-                    placeholder="abc@email.com"></label>
+                    placeholder="abc@email.com" required></label>
             <label for="number" id="number-label">What's your lucky number?
-                <input type="text" id="number" pattern="[0-500]" max="500" min="0"
-                    placeholder="Pick from 0 to 500"></label>
+                <input type="number" id="number" pattern="[0-500]" max="500" min="0"
+                    placeholder="0-500"></label>
         </fieldset>
         <fieldset><!--Dropdown - how often do you craft?-->
             <label for="dropdown">How often do you craft? </label>
@@ -32,33 +35,33 @@
         </fieldset>
         <fieldset><!--Radio Buttons--><!--Which item did you lose last?-->
             <label for="lost-item">Which one did you lose last?</label>
-            <input type="radio" name="lost-item">Patience
-            <input type="radio" name="lost-item">Needle
-            <input type="radio" name="lost-item">Hook
+            <input type="radio" name="lost-item" value="1">Needle
+            <input type="radio" name="lost-item" value="2">Hook
+            <input type="radio" name="lost-item" value="3">Patience
         </fieldset>
         <fieldset><!--Checkboxes with value attributes--><!--Yarn/tread hobby type-->
-            <label for="checkbox">What are your yarn/thread hobbies? </label>
-            <input type="checkbox" name="checkbox" value="1">Crochet </label>
-            <input type="checkbox" name="checkbox" value="2">Amigurumi </label>
-            <input type="checkbox" name="checkbox" value="3">Knitting </label>
-            <input type="checkbox" name="checkbox" value="4">Spool knitting </label>
-            <input type="checkbox" name="checkbox" value="5">Fiber art </label>
-            <input type="checkbox" name="checkbox" value="6">Macrame </label>
-            <input type="checkbox" name="checkbox" value="7">Embroidery </label>
-            <input type="checkbox" name="checkbox" value="8">Cross stitch </label>
-            <input type="checkbox" name="checkbox" value="9">Needlepoint </label>
-            <input type="checkbox" name="checkbox" value="10">Punch needle </label>
-            <input type="checkbox" name="checkbox" value="11">Sewing </label>
-            <input type="checkbox" name="checkbox" value="12">Patchwork </label>
-            <input type="checkbox" name="checkbox" value="13">English Paper Piecing (EPP) </label>
-            <input type="checkbox" name="checkbox" value="14">Quilting </label>
-            <input type="checkbox" name="checkbox" value="15">Beadwork </label>
+            <label for="hobbies">What are your yarn/thread hobbies? </label>
+            <input type="checkbox" name="hobbies" value="1">Crochet </label>
+            <input type="checkbox" name="hobbies" value="2">Amigurumi </label>
+            <input type="checkbox" name="hobbies" value="3">Knitting </label>
+            <input type="checkbox" name="hobbies" value="4">Spool knitting </label>
+            <input type="checkbox" name="hobbies" value="5">Fiber art </label>
+            <input type="checkbox" name="hobbies" value="6">Macrame </label>
+            <input type="checkbox" name="hobbies" value="7">Embroidery </label>
+            <input type="checkbox" name="hobbies" value="8">Cross stitch </label>
+            <input type="checkbox" name="hobbies" value="9">Needlepoint </label>
+            <input type="checkbox" name="hobbies" value="10">Punch needle </label>
+            <input type="checkbox" name="hobbies" value="11">Sewing </label>
+            <input type="checkbox" name="hobbies" value="12">Patchwork </label>
+            <input type="checkbox" name="hobbies" value="13">English Paper Piecing (EPP) </label>
+            <input type="checkbox" name="hobbies" value="14">Quilting </label>
+            <input type="checkbox" name="hobbies" value="15">Beadwork </label>
         </fieldset>
         <fieldset><!--Textarea--><!--What do you like crafting the most?-->
             <label for="message">What do you like crafting the most?</label>
             <textarea name="message" rows="10" cols="35" placeholder="Whatever I see on Pinterest!"></textarea>
         </fieldset>
-        <input type="submit" value="Submit"><!--Submit Button-->
+        <input type="submit" id="submit" value="Submit"><!--Submit Button-->
     </form>
 
 </body>
