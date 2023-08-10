@@ -63,3 +63,11 @@ input, textarea {
   border-radius: 5px;
   color: #383131;
 }
+
+/*I need to find out how to put them in two columns*/
+input[type="checkbox"] {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  user-select: none;
+}
