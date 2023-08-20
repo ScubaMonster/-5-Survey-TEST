@@ -15,12 +15,12 @@
     </main>
     <form id="survey-form" method="post"><!--form is missing the action url-->
         <fieldset><!--Labels-->
-            <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Pedro" required></label>
+            <label for="name" id="name-label">Enter your name: <input type="text" id="name" placeholder="Pedro"
+                    required></label>
             <label for="email" id="email-label">Enter your email: <input type="email" id="email"
                     placeholder="abc@email.com" required></label>
             <label for="number" id="number-label">What's your lucky number?
-                <input type="number" id="number" pattern="[0-500]" max="500" min="0"
-                    placeholder="0-500"></label>
+                <input type="number" id="number" pattern="[0-500]" max="500" min="0" placeholder="0-500"></label>
         </fieldset>
         <fieldset><!--Dropdown - how often do you craft?-->
             <label for="dropdown">How often do you craft? </label>
@@ -31,31 +31,78 @@
                 <option value="3">I always have a project on the go</option>
                 <option value="4">What is sleep?</option>
             </select>
-
         </fieldset>
-        <fieldset><!--Radio Buttons--><!--Which item did you lose last?-->
-            <label for="lost-item">Which one did you lose last?</label>
-            <input type="radio" name="lost-item" value="1">Needle
-            <input type="radio" name="lost-item" value="2">Hook
-            <input type="radio" name="lost-item" value="3">Patience
+        <fieldset><!--Radio Buttons needs fix css--><!--Which item did you lose last?-->
+            <legend>Which one did you lose last?</legend>
+            <input type="radio" name="lost-item" value="1" id="needle-button" checked><label for="needle-button">Needle</label>
+            <input type="radio" name="lost-item" value="2" id="hook-button"><label for="hook-button">Hook</label>
+            <input type="radio" name="lost-item" value="3" id="patience-button"><label
+                for="patience-button">Patience</label>
         </fieldset>
-        <fieldset><!--Checkboxes with value attributes--><!--Yarn/tread hobby type-->
-            <label for="hobbies">What are your fiber hobbies? </label>
-            <input type="checkbox" name="hobbies" value="1">Crochet </label>
-            <input type="checkbox" name="hobbies" value="2">Amigurumi </label>
-            <input type="checkbox" name="hobbies" value="3">Knitting </label>
-            <input type="checkbox" name="hobbies" value="4">Spool knitting </label>
-            <input type="checkbox" name="hobbies" value="5">Fiber art </label>
-            <input type="checkbox" name="hobbies" value="6">Macrame </label>
-            <input type="checkbox" name="hobbies" value="7">Embroidery </label>
-            <input type="checkbox" name="hobbies" value="8">Cross stitch </label>
-            <input type="checkbox" name="hobbies" value="9">Needlepoint </label>
-            <input type="checkbox" name="hobbies" value="10">Punch needle </label>
-            <input type="checkbox" name="hobbies" value="11">Sewing </label>
-            <input type="checkbox" name="hobbies" value="12">Patchwork </label>
-            <input type="checkbox" name="hobbies" value="13">English Paper Piecing (EPP) </label>
-            <input type="checkbox" name="hobbies" value="14">Quilting </label>
-            <input type="checkbox" name="hobbies" value="15">Beadwork </label>
+        <fieldset><!--Checkboxes with value attributes - fix css--><!--Yarn/tread hobby type-->
+            <legend>What are your fiber hobbies? </legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="hobbies" value="1" id="crochet-checkbox"><label
+                        for="crochet-checkbox">Crochet</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="2" id="knitting-checkbox"><label
+                        for="knitting-checkbox">Knitting</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="3" id="amigurumi-checkbox"><label
+                        for="amigurumi-checkbox">Amigurumi</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="4" id="spool-checkbox"><label
+                        for="spool-checkbox">Spool Knitting</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="5" id="fiber-checkbox"><label
+                        for="fiber-checkbox">Fiber Art</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="6" id="macrame-checkbox"><label
+                        for="macrame-checkbox">Macrame</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="7" id="embroidery-checkbox"><label
+                        for="embroidery-checkbox">Embroidery</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="8" id="cross-stitch-checkbox"><label
+                        for="cross-stitch-checkbox">Cross Stitch</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="9" id="needlepoint-checkbox"><label
+                        for="needlepoint-checkbox">Needlepoint</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="10" id="punch-checkbox"><label
+                        for="punch-checkbox">Punch Needle</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="11" id="sewing-checkbox"><label
+                        for="sewing-checkbox">Sewing</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="12" id="patchwork-checkbox"><label
+                        for="patchwork-checkbox">Patchwork</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="13" id="epp-checkbox"><label for="epp-checkbox">English
+                        Paper Piecing (EPP)</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="14" id="quilting-checkbox"><label
+                        for="quilting-checkbox">Quilting</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbies" value="15" id="beadwork-checkbox"><label
+                        for="beadwork-checkbox">Beadwork</label>
+                </li>
+            </ul>
         </fieldset>
         <fieldset><!--Textarea--><!--What do you like crafting the most?-->
             <label for="message">What do you like crafting the most?</label>
